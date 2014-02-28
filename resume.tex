@@ -6,146 +6,200 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,letter,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letter,roman]{moderncv} % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-% character encoding
-\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-% font definition
+\usepackage[utf8]{inputenc}                 % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage[T1]{fontenc}
-\renewcommand{\rmdefault}{ugm} % URW Garamond
-\renewcommand{\sfdefault}{uop} % URW Classico (Optima)
-%\usepackage[garamond]{mathdesign}
-\usepackage{garamondx}
-
-% add multi-column support
-\usepackage{multicol}
-\setlength{\multicolsep}{0pt}%Takes space before and after the multicolumn
+\renewcommand{\rmdefault}{ugm}              % URW Garamond
+\renewcommand{\sfdefault}{uop}              % URW Classico (Optima)
+\usepackage{garamondx}                      % Enable bold garamond, smallcaps
+\usepackage{multicol}                       % add multi-column support
 
 % moderncv themes
-\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{black}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{banking}                     % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                       % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\rmdefault}   % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                            % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % adjust the page margins
 \usepackage[scale=0.800]{geometry}
-\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\setlength{\hintscolumnwidth}{3cm}          % if you want to change the width of the column with the dates
 
-\include{pii.tex}
+\input{pii.tex}                             % insert personally identifiable information (name, address, etc.)
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
+
 \vspace{-\baselineskip}
+
 \section{\textsc{Summary of Qualifications}}
-\label{sec:Summary of Qualifications}
-\cvitem{}{A Senior Systems Engineer with six years of enterprise work experience; a specialist in automation development and systems management with a demonstrated
-tenacity for innovation, collaboration and improvement. Focus areas are the Microsoft Windows, SharePoint and System Center platforms, with a strong interest in cross-platform and open source technologies.}
+A Senior Systems Engineer with six years of enterprise work
+experience; a specialist in automation development and systems management
+with a demonstratedtenacity for innovation, collaboration and improvement.
+Focus areas are the Microsoft Windows, SharePoint and System Center platforms,
+with a strong interest in cross-platform and open source technologies.
 
 \section{\textsc{Work Experience}}
-\label{sec:Work Experience}
-\cventry{12/2013--Present}{Windows Server Engineer}{Nordstrom}{Seattle WA}{}{
+\cventry{12/2013--Present}{Windows Server Engineer}{Nordstrom}{Seattle WA}{}{%
   \begin{itemize}
-    \item Developed build and configuration management automation for Windows servers using Ruby and Chef.
-    \item Developed resource providers using Ruby FFI to allow Chef to configure services via native Windows APIs.
-    \item Participated in a DevOps software development lifecycle for Chef cookbooks targeting Windows; used Git for source control, Cucumber and Vagrant for test driven development, and Jenkins for continuous integration.
-    \item Managed monthly patching and updates for over 4000 Windows servers using WSUS.
+    \item Developed build and configuration management automation for Windows
+      servers using Ruby and Chef.
+    \item Developed resource providers using Ruby FFI to allow Chef to
+      configure services via native Windows APIs.
+    \item Participated in a DevOps software development lifecycle for Chef
+      cookbooks targeting Windows; used Git for source control, Cucumber and
+      Vagrant for test driven development, and Jenkins for continuous
+      integration.
+    \item Managed monthly patching and updates for over 4000 Windows servers
+      using WSUS.
   \end{itemize}
 }
-\cventry{05/2013--11/2013}{Systems Engineer}{Wimmer Solutions at Microsoft}{Redmond WA}{}{
+\cventry{05/2013--11/2013}{Systems Engineer}
+{Wimmer Solutions at Microsoft}{Redmond WA}{}{%
   \begin{itemize}
-    \item Developed a series of SCOM management packs to create a development pattern based on PowerShell and Orchestrator to support automatic resolution of 30\% of monitoring-generated incidents.
-    \item Maintained System Center Orchestrator and System Center Operations Manager infrastructure to support automation and monitoring for over 5000 servers.
-    \item Participated in an agile DevOps-style software development lifecycle, with monthly iterations to gather requirements, build, test, document, and deploy software to manage the Office 365 Dedicated service.
+    \item Developed a series of SCOM management packs to create a development
+      pattern based on PowerShell and Orchestrator to support automatic
+      resolution of 30\% of monitoring-generated incidents.
+    \item Maintained System Center Orchestrator and System Center Operations
+      Manager infrastructure to support automation and monitoring for over
+      5000 servers.
+    \item Participated in an agile DevOps-style software development
+      lifecycle, with monthly iterations to gather requirements, build, test,
+      document, and deploy software to manage the Office 365 Dedicated service.
   \end{itemize}
 }
-\cventry{07/2011--05/2013}{Senior Systems Engineer}{Avanade}{Seattle WA}{}{
+\cventry{07/2011--05/2013}{Senior Systems Engineer}
+{Avanade}{Seattle WA}{}{%
   \begin{itemize}
-    \item Trained and managed a six member global Tier II team spanning the U.S.A., India, Argentina, and the Philippines to provide technical, product, and development support for SharePoint platforms.
-    \item Improved project development teams’ deployment practices and operational sustainability by giving feedback with examples, which reduced time taken to execute changes by an average of 60\%.
-    \item Designed and implemented a knowledge management process to document systems operation and troubleshooting procedures by integrating SCSM knowledge article management features, SharePoint Server as an authoring environment, and SharePoint Business Data Services as a data bus.
-    \item Developed a suite of PowerShell scripts automate common tasks relating to managing a SharePoint farm, reducing user error and reducing the response time for common service requests.
-    \item Maintained 99.9\% uptime on multiple business-critical SharePoint Server farms using SharePoint and SQL high availability technologies and Akamai traffic management services.
-    \item Designed and implemented SCOM management packs to provide monitoring, performance alerts, and reporting for nine internal line of business applications; reduced alert response time to under thirty minutes.
+    \item Trained and managed a six member global Tier II team spanning the
+      U.S.A., India, Argentina, and the Philippines to provide technical,
+      product, and development support for SharePoint platforms.
+    \item Improved project development teams’ deployment practices and
+      operational sustainability by giving feedback with examples, which
+      reduced time taken to execute changes by an average of 60\%.
+    \item Designed and implemented a knowledge management process to document
+      systems operation and troubleshooting procedures by integrating SCSM
+      knowledge article management features, SharePoint Server as an authoring
+      environment, and SharePoint Business Data Services as a data bus.
+    \item Developed a suite of PowerShell scripts automate common tasks
+      relating to managing a SharePoint farm, reducing user error and reducing
+      the response time for common service requests.
+    \item Maintained 99.9\% uptime on multiple business-critical SharePoint
+      Server farms using SharePoint and SQL high availability technologies and
+      Akamai traffic management services.
+    \item Designed and implemented SCOM management packs to provide
+      monitoring, performance alerts, and reporting for nine internal line of
+      business applications; reduced alert response time to
+      under thirty minutes.
   \end{itemize}
 }
-\cventry{04/2010--07/2011}{Infrastructure Analyst}{Avanade}{Seattle WA}{}{
+\cventry{04/2010--07/2011}{Infrastructure Analyst}
+{Avanade}{Seattle WA}{}{%
   \textbf{Microsoft -- MSCIS -- SCOM Application Mapping}
   \begin{itemize}
-    \item Managed a globally distributed five-member development team to gather information about, model and monitor 39 complex multi-tier applications.
-    \item Supervised the creation of SCOM distributed application management packs for each application, while meeting an aggressive one-month delivery deadline.
+    \item Managed a globally distributed five-member development team to
+      gather information about, model and monitor 39 complex multi-tier
+      applications.
+    \item Supervised the creation of SCOM distributed application management
+      packs for each application, while meeting an aggressive
+      one-month delivery deadline.
   \end{itemize}
 }
-\cventry{04/2010--07/2011}{Infrastructure Analyst}{Avanade}{Seattle WA}{Continued}{
+\cventry{04/2010--07/2011}{Infrastructure Analyst}{Avanade}
+{Seattle WA}{Continued}{%
   \textbf{Microsoft -- Xbox Live Operations -- Monitoring Maturity Improvement}
   \begin{itemize}
-    \item Supervised an eight-member offshore development team creating process documentation and management packs for critical Xbox Live services, including the Zune Marketplace, Xbox Marketplace, and Xbox game matchmaking services.
-    \item Reduced SCOM alert volume and noise for the entire Xbox Live operations center from 200K duplicated alerts to forty relevant alerts per month.
-    \item Developed SCSM workflow code to automatically link incidents created in Service Manager by Operations Manager alerts to knowledge articles stored in Service Manager.
+    \item Supervised an eight-member offshore development team creating
+      process documentation and management packs for critical Xbox Live
+      services, including the Zune Marketplace, Xbox Marketplace, and Xbox
+      game matchmaking services.
+    \item Reduced SCOM alert volume and noise for the entire Xbox Live
+      operations center from 200K duplicated alerts to forty relevant alerts
+      per month.
+    \item Developed SCSM workflow code to automatically link incidents created
+      in Service Manager by Operations Manager alerts to knowledge articles
+      stored in Service Manager.
   \end{itemize}
   \textbf{Wireless Telecommunications Provider -- Internal IT}
   \begin{itemize}
-    \item Increased accountability and simplified IT operation practices by developing custom SharePoint workflows and training two team members on SharePoint technology support.
-    \item Maintained production Active Directory and Microsoft Office SharePoint Server 2007 environments.
+    \item Increased accountability and simplified IT operation practices by
+      developing custom SharePoint workflows and training two team members
+      on SharePoint technology support.
+    \item Maintained production Active Directory and Microsoft Office
+      SharePoint Server 2007 environments.
   \end{itemize}
 }
-\cventry{01/2010--04/2010}{Systems Engineer}{TEKSystems at Microsoft}{Redmond WA}{}{
+\cventry{01/2010--04/2010}{Systems Engineer}
+{TEKSystems at Microsoft}{Redmond WA}{}{%
   \begin{itemize}
-    \item Maintained 99.9\% availability of multiple SharePoint Server farms located in globally distributed datacenters.
-    \item Developed PowerShell automated deployment scripts for pre-release versions of the BPOS-S environments.
-    \item Isolated and troubleshot issues with automated deployment of pre-release SharePoint 2010 and proprietary provisioning tool software in coordination with infrastructure, development, and test teams as a member of the BPOS Wave 14 development group. 
+    \item Maintained 99.9\% availability of multiple SharePoint Server farms
+      located in globally distributed datacenters.
+    \item Developed PowerShell automated deployment scripts for pre-release
+      versions of the BPOS-S environments.
+    \item Isolated and troubleshot issues with automated deployment of
+      pre-release SharePoint 2010 and proprietary provisioning tool software
+      in coordination with infrastructure, development, and test teams as a
+      member of the BPOS Wave 14 development group. 
   \end{itemize}
 }
 
 \section{\textsc{Additional Work Experience}}
-\label{sec:Additional Work Experience}
-\cventry{04/2009--12/2009}{Operations Engineer - Tier II}{Avanade}{Seattle WA}{}{}
-\cventry{09/2008--04/2009}{Systems Engineer}{Compucom at Microsoft}{Redmond WA}{}{}
-\cventry{07/2007--07/2008}{Support Engineer}{Volt at Microsoft}{Fargo ND}{}{}
+\cventry{04/2009--12/2009}{Operations Engineer - Tier II}
+{Avanade}{Seattle WA}{}{}
+\cventry{09/2008--04/2009}{Systems Engineer}
+{Compucom at Microsoft}{Redmond WA}{}{}
+\cventry{07/2007--07/2008}{Support Engineer}
+{Volt at Microsoft}{Fargo ND}{}{}
 
 \section{\textsc{Industry Certifications}}
-\label{sec:Industry Certifications}
 \cvitem{MCSE}{SharePoint, Private Cloud}
-\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008, SharePoint Administrator 2010}
+\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008,
+SharePoint Administrator 2010}
 \cvitem{MCSA}{Windows Server 2012}
 
 \section{\textsc{Technical Skills}}
-\label{sec:Technical Skills}
 \cvitem{Languages}{PowerShell, Ruby, C\#, T-SQL, JavaScript, XML, HTML, CSS}
-\cvitem{Automation}{Chef, Powershell Desired State Configuration, Orchestrator 2012}
-\cvitem{Collaboration}{Git, TFS, SharePoint Server 2013, 2010, 2007, NewsGator Social Services 2010}
+\cvitem{Automation}{Chef, Powershell Desired State Configuration,
+Orchestrator 2012}
+\cvitem{Collaboration}{Git, TFS, SharePoint Server 2013, 2010, 2007,
+NewsGator Social Services 2010}
 \cvitem{Virtualization}{Hyper-V, VirtualBox, Vagrant}
 \cvitem{ITSM Tools}{Operations Manager 2007 R2 and 2012, Service Manager 2012}
-\cvitem{Identity Management}{Forefront Identity Manager 2010 R2, Active Directory Federation Services, Active Directory Domain Services, PKI Infrastructure}
+\cvitem{Identity Management}{Forefront Identity Manager 2010 R2,
+Active Directory Federation Services, Active Directory Domain Services,
+PKI Infrastructure}
 
 \section{\textsc{Education}}
 \label{sec:Education}
-\cventry{Graduated 2007}{Associate of Applied Science (A.A.S.)}{North Dakota State College of Science}{Wahpeton, ND}{GPA: 4.0}{Major: Computer Information Systems}  % arguments 3 to 6 can be left empty
-
-\clearpage
+\cventry{Graduated 2007}{Associate of Applied Science (A.A.S.)}
+{North Dakota State College of Science}{Wahpeton, ND}{GPA: 4.0}
+{Major: Computer Information Systems}
+%
+%\clearpage
 %-----       letter       ---------------------------------------------------------
 % recipient data
-\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
-\date{January 01, 1984}
-\opening{Dear Sir or Madam,}
-\closing{Yours faithfully,}
-\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
-\makelettertitle
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+%Albert Einstein discovered that $e=mc^2$ in 1905.
 
-Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
 
-Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
-
-Albert Einstein discovered that $e=mc^2$ in 1905.
-
-\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
-
-\makeletterclosing
+%\makeletterclosing
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
