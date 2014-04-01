@@ -40,15 +40,26 @@
 \begin{document}
 %-----       resume       ----------------------------------------------------
 \makecvtitle{}
-\vspace{-\baselineskip}
+%\vspace{-\baselineskip}
 
 \section{\textsc{Summary of Qualifications}}
-A Senior Automation Engineer with six years of enterprise work
-experience; a specialist in automation development and systems management
-with a demonstrated tenacity for innovation, collaboration and improvement.
-Focus areas are the Windows, SharePoint and System Center platforms,
-with a strong interest in a career shift towards development on cross-platform and
-open source technologies.
+A Senior Automation Engineer with six years of enterprise work experience; a
+specialist in automation development and systems management with a demonstrated
+tenacity for innovation, collaboration and improvement. Focus areas are the
+Chef and Windows platforms, with a strong interest in a career shift towards
+development on cross-platform and open source technologies.
+
+\section{\textsc{Projects}}
+\cvitem{Devstation}{%
+  A Chef cookbook for setting up my personal development environment.
+  Provides configuration management and quick rebuild of a Linux development
+  environment on Ubuntu as needed.\\
+  \textit{Uses: Ruby, Chef, Bash}
+}
+\cvitem{Double-Shot}{%
+  A web application to tag, organize, search and display images.\\
+  \textit{Uses: Node.js, PostgreSQL, React.js}
+}
 
 \section{\textsc{Work Experience}}
 \cventry{12/2013 -- Present}{Windows Server Engineer}{Nordstrom}
@@ -59,8 +70,8 @@ open source technologies.
     \item Developed resource providers using Ruby FFI to allow Chef to
       configure services via native Windows APIs.
     \item Participated in a DevOps software development lifecycle for Chef
-      cookbooks targeting Windows; used Git for source control, Cucumber and
-      Vagrant for TDD, and Jenkins for continuous integration.
+      cookbooks targeting Windows; used Git for source control, RSpec/ChefSpec
+      and Vagrant for TDD, and Jenkins for continuous integration.
     \item Managed monthly patching and updates for over 4000 Windows servers
       using WSUS.
   \end{itemize}
@@ -74,11 +85,11 @@ open source technologies.
     \item Developed Windows services in C\# to integrate a custom ticketing
       system, CMDB and SCOM.
     \item Maintained System Center Orchestrator and System Center Operations
-      Manager infrastructure to support automation and monitoring for over
-      5000 servers.
-    \item Participated in an agile DevOps-style software development
-      lifecycle, with monthly iterations to gather requirements, build, test,
-      document, and deploy software to manage the Office 365 Dedicated service.
+      Manager infrastructure to support automation and monitoring for over 5000
+      servers.
+    \item Participated in an agile DevOps-style software development lifecycle,
+      with monthly iterations to gather requirements, build, test, document,
+      and deploy software to manage the Office 365 Dedicated service.
   \end{itemize}
 }
 \cventry{07/2011 -- 05/2013}{Senior Systems Engineer}
@@ -97,41 +108,30 @@ open source technologies.
     \item Developed a suite of PowerShell scripts automate common tasks
       relating to managing a SharePoint farm, reducing user error and reducing
       the response time for common service requests.
-    \item Maintained 99.9\% uptime on five business-critical SharePoint
-      Server farms using SharePoint and SQL high availability technologies and
-      Akamai traffic management services.
-    \item Designed and implemented SCOM management packs to provide
-      monitoring, performance alerts, and reporting for nine internal line of
-      business applications; reduced alert response time to
-      under thirty minutes.
+    \item Designed and implemented SCOM management packs to provide monitoring,
+      performance alerts, and reporting for nine internal line of business
+      applications; reduced average alert response time to under thirty minutes.
   \end{itemize}
 }
 \cventry{04/2010 -- 07/2011}{Infrastructure Analyst}
 {Avanade}{Seattle, WA}{Consulting}{%
   \textbf{Microsoft -- MSCIS -- SCOM Application Mapping}
   \begin{itemize}
-    \item Managed a globally distributed five-member development team to
-      gather information about, model and monitor 39 complex multi-tier
-      applications.
+    \item Managed a globally distributed five-member development team to gather
+      information about, model and monitor 39 complex multi-tier applications.
     \item Supervised the creation of SCOM distributed application management
-      packs for each application, while meeting an aggressive
-      one-month delivery deadline.
+      packs for each application, while meeting an aggressive one-month
+      delivery deadline.
   \end{itemize}
-}
-\cventry{04/2010 -- 07/2011}{Infrastructure Analyst}{Avanade}
-{Seattle, WA}{Consulting (Continued)}{%
   \textbf{Microsoft -- Xbox Live Operations -- Monitoring Maturity Improvement}
   \begin{itemize}
-    \item Supervised an eight-member offshore development team creating
-      process documentation and management packs for critical Xbox Live
-      services, including the Zune Marketplace, Xbox Marketplace, and Xbox
-      game matchmaking services.
-    \item Reduced SCOM alert volume and noise for the entire Xbox Live
-      operations center from 200K duplicated alerts to forty relevant alerts
-      per month.
-    \item Developed SCSM workflow code to automatically link incidents created
-      in Service Manager by Operations Manager alerts to knowledge articles
-      stored in Service Manager.
+    \item Supervised an eight-member offshore development team creating process
+      documentation and management packs for critical Xbox Live services.
+    \item Reduced SCOM alert volume for the Xbox Live operations center from
+      200K duplicated alerts to forty relevant alerts per month.
+    \item Developed a SCSM workflow using C\# to automatically link incidents
+      created in Service Manager by Operations Manager alerts to knowledge
+      articles stored in Service Manager.
   \end{itemize}
   \textbf{Wireless Telecommunications Provider -- Internal IT}
   \begin{itemize}
@@ -170,20 +170,7 @@ open source technologies.
 SharePoint Administrator 2010}
 \cvitem{MCSA}{Windows Server 2012}
 
-\section{\textsc{Technical Skills}}
-\cvitem{Languages}{PowerShell, Ruby, C\#, T-SQL, JavaScript, XML, HTML, CSS}
-\cvitem{Automation}{Chef, Powershell Desired State Configuration,
-Orchestrator 2012}
-\cvitem{Collaboration}{Git, TFS, SharePoint Server 2013, 2010, 2007,
-NewsGator Social Services 2010}
-\cvitem{Virtualization}{Hyper-V, VirtualBox, Vagrant}
-\cvitem{ITSM Tools}{Operations Manager 2007 R2 and 2012, Service Manager 2012}
-\cvitem{Identity Management}{Forefront Identity Manager 2010 R2,
-Active Directory Federation Services, Active Directory Domain Services,
-PKI Infrastructure}
-
 \section{\textsc{Education}}
-\label{sec:Education}
 \cventry{Graduated 2007}{Associate of Applied Science (A.A.S.)}
 {North Dakota State College of Science}{Wahpeton, ND}{GPA: 4.0}
 {Major: Computer Information Systems}
