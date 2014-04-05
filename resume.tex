@@ -29,7 +29,7 @@
 \nopagenumbers{}
 
 % adjust the page margins
-\usepackage[scale=0.800]{geometry}
+\usepackage[scale=0.825]{geometry}
 % if you want to change the width of the column with the dates
 \setlength{\hintscolumnwidth}{3cm}
 
@@ -40,7 +40,7 @@
 \begin{document}
 %-----       resume       ----------------------------------------------------
 \makecvtitle{}
-%\vspace{-\baselineskip}
+\vspace{-\baselineskip}
 
 \section{\textsc{Summary of Qualifications}}
 A Senior Automation Engineer with six years of enterprise work experience; a
@@ -50,22 +50,31 @@ Chef and Windows platforms, with a strong interest in a career shift towards
 development on cross-platform and open source technologies.
 
 \section{\textsc{Projects}}
-\cvitem{Devstation}{%
-  An opinionated Chef cookbook for setting up a personal development
-  environment.  Provides configuration management and quick rebuild of a Linux
-  development environment on Ubuntu.\\
-  \textit{Uses: Ruby, Chef, Bash}
+\cvitem{WinDHCP}{%
+  A library cookbook providing resources for Windows Server DHCP services APIs
+  via a Chef LWRP. Uses custom Ruby code with the Ruby FFI gem to natively
+  access the Windows DHCPSAPI library.\\
+  \textit{Uses: Ruby, Chef, FFI}
 }
 \cvitem{Double-Shot}{%
   A web application to tag, organize, search and display images.\\
   \textit{Uses: Node.js, PostgreSQL, React.js}
 }
-\cvitem{WinDHCP}{%
-  A Chef library cookbook exposing resources and providers for use in recipes,
-  using the DHCP Server API and Ruby FFI to allow configuration of
-  Windows-based DHCP servers.\\
-  \textit{Uses: Ruby, Chef}
-}
+
+\section{\textsc{Technical Skills}}
+\cvitem{Languages}{PowerShell, Ruby, C\#, SQL, JavaScript, XML, HTML, CSS}
+\cvitem{Automation}{Chef, Orchestrator 2012}
+\cvitem{Collaboration}{Git, TFS, SharePoint Server 2013, 2010, 2007,
+NewsGator Social Services 2010}
+\cvitem{Virtualization}{Hyper-V, VirtualBox, Vagrant}
+\cvitem{ITSM Tools}{Operations Manager 2007 R2 and 2012, Service Manager 2012}
+\cvitem{Identity Management}{Forefront Identity Manager, ADFS, Active Directory}
+
+\section{\textsc{Industry Certifications}}
+\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008,
+SharePoint Administrator 2010}
+\cvitem{MCSA}{Windows Server 2012}
+\cvitem{MCSE}{SharePoint, Private Cloud}
 
 \section{\textsc{Work Experience}}
 \cventry{12/2013 -- Present}{Windows Server Engineer}{Nordstrom}
@@ -132,8 +141,10 @@ development on cross-platform and open source technologies.
   \end{itemize}
   \textbf{Microsoft -- Xbox Live Operations -- Monitoring Maturity Improvement}
   \begin{itemize}
-    \item Supervised an eight-member offshore development team creating process
-      documentation and management packs for critical Xbox Live services.
+   \item Supervised an eight-member offshore development team creating
+      process documentation and management packs for critical Xbox Live
+      services, including the Zune Marketplace, Xbox Marketplace, and Xbox
+      game matchmaking services.
     \item Reduced SCOM alert volume for the Xbox Live operations center from
       200K duplicated alerts to forty relevant alerts per month.
     \item Developed a SCSM workflow using C\# to automatically link incidents
@@ -170,12 +181,6 @@ development on cross-platform and open source technologies.
 {Compucom at Microsoft}{Redmond, WA}{Windows Team}{}
 \cventry{07/2007 -- 07/2008}{Support Engineer}
 {Volt at Microsoft}{Fargo, ND}{Premier Support Services}{}
-
-\section{\textsc{Industry Certifications}}
-\cvitem{MCSE}{SharePoint, Private Cloud}
-\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008,
-SharePoint Administrator 2010}
-\cvitem{MCSA}{Windows Server 2012}
 
 \section{\textsc{Education}}
 \cventry{Graduated 2007}{Associate of Applied Science (A.A.S.)}
