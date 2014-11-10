@@ -8,9 +8,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 % URW Garamond
-\renewcommand{\rmdefault}{ugm}
+%\renewcommand{\rmdefault}{ugm}
 % URW Classico (Optima)
-\renewcommand{\sfdefault}{uop}
+%\renewcommand{\sfdefault}{uop}
 % Enable bold garamond, smallcaps
 \usepackage{garamondx}
 % add multi-column support
@@ -43,29 +43,49 @@
 \vspace{-\baselineskip}
 
 \section{\textsc{Summary of Qualifications}}
-A Senior DevOps Engineer with seven years of experience in automation
-development and systems management, with a demonstrated tenacity for
-innovation, collaboration and improvement. Proven skills in managing
-cross-platform, heterogeneous environments and infrastructure design. Deep
-expertise in with automation, monitoring, and continuous delivery in highly
-available, globally distributed services.
+A Senior DevOps Engineer with proven skills in creating, automating and
+managing highly complex, business critical services on-premise and in the
+cloud, with a demonstrated tenacity for innovation, collaboration and
+improvement. Works best when challenged with new technologies and problems and
+given creative freedom to come up with solutions. Always learning and applying
+new concepts and skills.
+
+\section{\textsc{Technical Skills}}
+\cvitem{Languages}{Python, Go, PowerShell, C\#, T-SQL, JavaScript, Ruby}
+\cvitem{Automation}{Amazon CloudFormation/Elastic Beanstalk, Salt Stack, Chef,
+Docker, Orchestrator 2012}
+\cvitem{Collaboration}{Git, TFS, SharePoint Server, ejabberd}
+\cvitem{Cloud Services}{Amazon Web Services, Windows Azure}
+\cvitem{Monitoring Tools}{ElasticSearch/Kibana/Logstash stack, Consul,
+Microsoft Operations Manager}
+\cvitem{Operating Systems}{Linux (CentOS and Ubuntu), Microsoft Windows Server
+2008 and 2012}
 
 \section{\textsc{Work Experience}}
 \cventry{06/2014 -- Present}{Senior DevOps Engineer}{PlayFab}
 {Seattle, WA}{}{%
   \begin{itemize}
     \item Designed and built infrastructure automation for API and multiplayer
-      game server hosting services running Windows and Linux (Ubuntu) on Amazon
-      Web Services and SoftLayer Bare Metal cloud services using the Salt
-      automation stack, Consul for service discovery and monitoring, and AWS
-      CloudFormation/Elastic Beanstalk to define cloud service topology.
+      game server hosting services running Windows and Linux (CentOS) on Amazon
+      Web Services and SoftLayer Bare Metal cloud services. Used a combination
+      of the Salt and PowerShell DSC automation stacks with Consul for service
+      discovery and monitoring. Took full advantage of AWS
+      CloudFormation/Elastic Beanstalk to define cloud service topology and
+      automatically replace failed instances.
+    \item Deployed customer-facing and internal log search service using
+      ElasticSearch, Logstash, RabbitMQ, and Kibana. This system allowed
+      aggregated, near-real-time analysis of critical server log data,
+      decreasing the time taken to detect and resolve service issues.
+    \item Deployed customer-facing and internal performance analysis system
+      using InfluxDB and Grafana.
+    \item Implemented customer-facing authentication proxy for logging and
+      performance service using Go.
     \item Reduced Amazon costs by 31\% by making instance counts more reactive
       with autoscaling while simultaneously  making the company's core API
       services more highly available.
-    \item Deployed a log search service using ElasticSearch, Logstash,
-      RabbitMQ, and Kibana. This system allowed aggregated, near-real-time
-      analysis of critical server log data, decreasing the time taken to detect
-      and resolve service issues.
+    \item Rebuilt game chat services using ejabberd; updated to latest version
+      of ejabberd and converted from a fixed number of servers to an AWS
+      Autoscaling Group.
     \item Implemented continious integration services using Jenkins with
       automated deployments to Amazon Elastic Beanstalk environments.
   \end{itemize}
@@ -164,22 +184,11 @@ available, globally distributed services.
 \cventry{07/2007 -- 07/2008}{Support Engineer}
 {Volt at Microsoft}{Fargo, ND}{Premier Support Services}{}
 
-\section{\textsc{Industry Certifications}}
-\cvitem{MCSE}{SharePoint, Private Cloud}
-\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008,
-SharePoint Administrator 2010}
-\cvitem{MCSA}{Windows Server 2012}
-
-\section{\textsc{Technical Skills}}
-\cvitem{Languages}{Python, PowerShell, Ruby, C\#, T-SQL, JavaScript, Go}
-\cvitem{Operating Systems}{Linux (Ubuntu Server), Microsoft Windows Server 2008
-and 2012}
-\cvitem{Automation}{Salt Stack, Chef, Orchestrator 2012, Amazon
-CloudFormation/Elastic Beanstalk}
-\cvitem{Collaboration}{Git, TFS, SharePoint Server, EJabberd}
-\cvitem{Cloud Services}{Amazon Web Services, Windows Azure}
-\cvitem{Monitoring Tools}{ElasticSearch/Kibana/Logstash stack, Consul,
-Microsoft Operations Manager}
+%\section{\textsc{Industry Certifications}}
+%\cvitem{MCSE}{SharePoint, Private Cloud}
+%\cvitem{MCITP}{Enterprise Administrator on Windows Server 2008,
+%SharePoint Administrator 2010}
+%\cvitem{MCSA}{Windows Server 2012}
 
 \section{\textsc{Education}}
 \label{sec:Education}
