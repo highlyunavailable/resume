@@ -29,7 +29,7 @@
 \nopagenumbers{}
 
 % adjust the page margins
-\usepackage[scale=0.800]{geometry}
+\usepackage[scale=0.815]{geometry}
 % if you want to change the width of the column with the dates
 \setlength{\hintscolumnwidth}{3cm}
 
@@ -51,43 +51,43 @@ given creative freedom to come up with solutions. Always learning and applying
 new concepts and skills.
 
 \section{\textsc{Technical Skills}}
-\cvitem{Languages}{Python, Go, PowerShell, C\#, T-SQL, JavaScript, Ruby}
-\cvitem{Automation}{Amazon CloudFormation/Elastic Beanstalk, Salt Stack, Chef,
+\cvitem{Languages}{Python, Go, PowerShell, C\#, SQL, JavaScript, Ruby, Lua}
+\cvitem{Automation}{AWS CloudFormation \& Elastic Beanstalk, Salt Stack, Chef,
 Docker, Orchestrator 2012}
-\cvitem{Collaboration}{Git, TFS, SharePoint Server, ejabberd}
+\cvitem{Collaboration}{Git, TFS, SharePoint Server}
 \cvitem{Cloud Services}{Amazon Web Services, Windows Azure}
-\cvitem{Monitoring Tools}{ElasticSearch/Kibana/Logstash stack, Consul,
-Microsoft Operations Manager}
+\cvitem{Monitoring Tools}{Heka, Logstash, Consul, Microsoft Operations Manager}
+\cvitem{Data Storage and Transfer}{ElasticSearch, InfluxDB, PostgreSQL,
+Microsoft SQL Server, RabbitMQ}
 \cvitem{Operating Systems}{Linux (CentOS and Ubuntu), Microsoft Windows Server
-2008 and 2012}
+2008 R2 and 2012 R2}
 
 \section{\textsc{Work Experience}}
-\cventry{06/2014 -- Present}{Senior DevOps Engineer}{PlayFab}
+\cventry{06/2014 -- Present}{Senior DevOps Engineer}{PlayFab, Inc.}
 {Seattle, WA}{}{%
   \begin{itemize}
-    \item Designed and built infrastructure automation for API and multiplayer
-      game server hosting services running Windows and Linux (CentOS) on Amazon
-      Web Services and SoftLayer Bare Metal cloud services. Used a combination
-      of the Salt and PowerShell DSC automation stacks with Consul for service
-      discovery and monitoring. Took full advantage of AWS
-      CloudFormation/Elastic Beanstalk to define cloud service topology and
-      automatically replace failed instances.
-    \item Deployed customer-facing and internal log search service using
-      ElasticSearch, Logstash, RabbitMQ, and Kibana. This system allowed
-      aggregated, near-real-time analysis of critical server log data,
-      decreasing the time taken to detect and resolve service issues.
-    \item Deployed customer-facing and internal performance analysis system
-      using InfluxDB and Grafana.
-    \item Implemented customer-facing authentication proxy for logging and
-      performance service using Go.
-    \item Reduced Amazon costs by 31\% by making instance counts more reactive
-      with autoscaling while simultaneously  making the company's core API
-      services more highly available.
-    \item Rebuilt game chat services using ejabberd; updated to latest version
-      of ejabberd and converted from a fixed number of servers to an AWS
-      Autoscaling Group.
-    \item Implemented continious integration services using Jenkins with
-      automated deployments to Amazon Elastic Beanstalk environments.
+    \item Designed and built a scalable server management stack which featured
+      built-in blue/green deployments, immutable server builds and aggregated,
+      near-real-time analysis of server event and performance data. This
+      allowed PlayFab engineers to easily build, test, deploy (and if needed,
+      roll back) new versions of the company's core API services in time
+      measured in minutes rather than hours. The management stack used Salt for
+      scriptable deployment, Consul for service discovery and monitoring and
+      Heka as an event stream router, with ElasticSearch and InfluxDB as data
+      backends for log and metric aggregation respectively. As part of this
+      effort, wrote code in Python, PowerShell, Lua, Go and Bash.
+    \item Designed and ran a scalable and highly available infrastructure for
+      API and multiplayer game server hosting services running Windows and
+      Linux (CentOS) on Amazon Web Services (AWS) and SoftLayer Bare Metal
+      cloud services. A happy side effect was an AWS cost reduction of 31% due
+      to use of autoscaling groups and general efficiency improvements leading
+      to a reduction in the number of servers live at any one time.
+    \item Implemented continuous integration and testing services using Jenkins
+      with automated deployments to Amazon Elastic Beanstalk environments.
+    \item Redesigned and upgraded ejabberd infrastructure, which was used to
+      provide game chat services. To allow autoscaling, wrote an ejabberdctl
+      cluster join/leave module in Erlang to use as part of an AWS autoscaling
+      process.
   \end{itemize}
 }
 
@@ -103,7 +103,7 @@ Microsoft Operations Manager}
   \end{itemize}
 }
 \cventry{05/2013 -- 11/2013}{Systems Engineer}
-{Wimmer Solutions at Microsoft}{Redmond, WA}{Office 365 Dedicated}{%
+{Microsoft (via Wimmer Solutions)}{Redmond, WA}{Office 365 Dedicated}{%
   \begin{itemize}
     \item Developed a series of SCOM management packs to create a development
       pattern based on PowerShell and Orchestrator to support automatic
@@ -116,7 +116,7 @@ Microsoft Operations Manager}
   \end{itemize}
 }
 \cventry{07/2011 -- 05/2013}{Senior Systems Engineer}
-{Avanade}{Seattle, WA}{ITS Department}{%
+{Avanade, Inc.}{Seattle, WA}{ITS Department}{%
   \begin{itemize}
     \item Trained and managed a six member global Tier II team spanning the
       U.S.A., India, Argentina, and the Philippines to provide technical,
@@ -141,7 +141,7 @@ Microsoft Operations Manager}
   \end{itemize}
 }
 \cventry{04/2010 -- 07/2011}{Infrastructure Analyst}
-{Avanade}{Seattle, WA}{Consulting}{%
+{Avanade, Inc.}{Seattle, WA}{Consulting}{%
   \textbf{Microsoft -- MSCIS -- SCOM Application Mapping}
   \begin{itemize}
     \item Managed a globally distributed five-member development team to
@@ -176,13 +176,13 @@ Microsoft Operations Manager}
 
 \section{\textsc{Additional Work Experience}}
 \cventry{01/2010 -- 04/2010}{Systems Engineer}
-{TEKSystems at Microsoft}{Redmond, WA}{BPOS-S}{}
+{Microsoft (via TEKSystems)}{Redmond, WA}{BPOS-S}{}
 \cventry{04/2009 -- 12/2009}{Operations Engineer}
-{Avanade}{Seattle, WA}{ITS Department}{}
+{Avanade, Inc. (via Triad Group)}{Seattle, WA}{ITS Department}{}
 \cventry{09/2008 -- 04/2009}{Systems Engineer}
-{Compucom at Microsoft}{Redmond, WA}{Windows Team}{}
+{Microsoft (via Compucom)}{Redmond, WA}{Windows Team}{}
 \cventry{07/2007 -- 07/2008}{Support Engineer}
-{Volt at Microsoft}{Fargo, ND}{Premier Support Services}{}
+{Microsoft (via VMC)}{Fargo, ND}{Premier Support Services}{}
 
 %\section{\textsc{Industry Certifications}}
 %\cvitem{MCSE}{SharePoint, Private Cloud}
