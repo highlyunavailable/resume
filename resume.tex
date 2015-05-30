@@ -48,44 +48,46 @@ managing highly complex, business critical services on-premise and in the
 cloud, with a demonstrated tenacity for innovation, collaboration and
 improvement. Works best when challenged with new technologies and problems and
 given creative freedom to come up with solutions. Always learning and applying
-new concepts and skills.
+new concepts and skills and enjoys contributing to open source software.
 
 \section{\textsc{Technical Skills}}
-\cvitem{Languages}{Python, Go, PowerShell, C\#, SQL, JavaScript, Ruby, Lua}
-\cvitem{Automation}{AWS CloudFormation \& Elastic Beanstalk, Salt Stack, Chef,
-Docker, Orchestrator 2012}
-\cvitem{Collaboration}{Git, TFS, SharePoint Server}
-\cvitem{Cloud Services}{Amazon Web Services, Windows Azure}
-\cvitem{Monitoring Tools}{Heka, Logstash, Consul, Microsoft Operations Manager}
-\cvitem{Data Storage and Transfer}{ElasticSearch, InfluxDB, PostgreSQL,
-Microsoft SQL Server, RabbitMQ}
-\cvitem{Operating Systems}{Linux (CentOS and Ubuntu), Microsoft Windows Server
-2008 R2 and 2012 R2}
+\cvitem{Languages}{Python, Go, PowerShell, C\#, SQL, JavaScript, Bash}
+\cvitem{Operating Systems}{Microsoft Windows Server 2008 R2 and 2012 R2, Linux (CentOS)}
+\cvitem{Cloud Services}{Amazon Web Services, Windows Azure, SoftLayer}
+\cvitem{Automation}{SaltStack, Chef, Docker, Orchestrator 2012}
+\cvitem{Infrastructure Tools}{Logstash, Consul, Microsoft System Center Operations Manager}
+\cvitem{Data Services}{ElasticSearch, InfluxDB, PostgreSQL, Microsoft SQL Server}
 
 \section{\textsc{Work Experience}}
 \cventry{06/2014 -- Present}{Senior DevOps Engineer}{PlayFab, Inc.}
 {Seattle, WA}{}{%
   \begin{itemize}
-    \item Designed and built a scalable server management stack which featured
-      built-in blue/green deployments, immutable server builds and aggregated,
-      near-real-time analysis of server event and performance data. This
-      allowed PlayFab engineers to easily build, test, deploy (and if needed,
-      roll back) new versions of the company's core API services in time
-      measured in minutes rather than hours. The management stack used Salt for
-      scriptable deployment, Consul for service discovery and monitoring and
-      Heka as an event stream router, with ElasticSearch and InfluxDB as data
-      backends for log and metric aggregation respectively. As part of this
-      effort, wrote code in Python, PowerShell, Lua, Go and Bash.
-    \item Designed and ran a scalable and highly available infrastructure for
-      API and multiplayer game server hosting services running Windows and
-      Linux (CentOS) on Amazon Web Services (AWS) and SoftLayer Bare Metal
-      cloud services. A happy side effect was an AWS cost reduction of 31% due
-      to use of autoscaling groups and general efficiency improvements leading
-      to a reduction in the number of servers live at any one time.
-    \item Implemented continuous integration and testing services using Jenkins
-      with automated deployments to Amazon Elastic Beanstalk environments.
-    \item Redesigned and upgraded ejabberd infrastructure, which was used to
-      provide game chat services. To allow autoscaling, wrote an ejabberdctl
+    \item Designed and built a scalable server management stack for all of
+      PlayFab's services. This allowed PlayFab engineers to easily build, test,
+      deploy (and if needed, roll back) new versions of the company's core API
+      services in time measured in minutes rather than hours as well as saving
+      the company \$500,000 in AWS costs over the year.
+      \begin{itemize}
+        \item Built continuous integration and testing on Jenkins to automate
+          deployments to Amazon Elastic Beanstalk.
+        \item Deployed a Consul cluster in each datacenter to provide service
+          discovery and monitoring.
+        \item Developed scripted deployment of Windows and Linux servers using
+          masterless SaltStack with state storage in S3.
+        \item Developed a simple data pipeline using Heka as an event stream
+          router and performance data collector, with ElasticSearch and
+          InfluxDB as data backends for log and performance metrics.
+        \item Saved time for developers every day by building internal
+          dashboards using Kibana, Grafana and the Consul web UI to expose log,
+          performance and health data.
+      \end{itemize}
+    \item Ported the Consul API from Go to C\# and open-sourced the library as
+      \textbf{Consul.NET}. This library is used internally to allow core
+      PlayFab services which are written in ASP.NET/C\# to take advantage of
+      the distributed lock and highly consistent key/value pair storage
+      provided by Consul.
+    \item Redesigned and upgraded PlayFab's \textbf{ejabberd} infrastructure,
+      which was used to provide game chat services. Wrote an ejabberdctl
       cluster join/leave module in Erlang to use as part of an AWS autoscaling
       process.
   \end{itemize}
