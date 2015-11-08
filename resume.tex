@@ -51,41 +51,41 @@ given creative freedom to come up with solutions. Always learning and applying
 new concepts and skills and enjoys contributing to open source software.
 
 \section{\textsc{Technical Skills}}
-\cvitem{Languages}{Python, Go, PowerShell, C\#, SQL, JavaScript, Bash}
-\cvitem{Operating Systems}{Microsoft Windows Server 2008 R2 and 2012 R2, Linux (CentOS)}
+\cvitem{Languages (Proficient)}{Go, C\#, PowerShell, Python, SQL}
+\cvitem{Languages (Basic)}{Ruby, Bash scripting, Javascript, C, Lua, Erlang, LaTeX}
 \cvitem{Cloud Services}{Amazon Web Services, Windows Azure, SoftLayer}
 \cvitem{Automation}{SaltStack, Chef, Docker, Orchestrator 2012}
 \cvitem{Infrastructure Tools}{Logstash, Consul, Microsoft System Center Operations Manager}
 \cvitem{Data Services}{ElasticSearch, InfluxDB, PostgreSQL, Microsoft SQL Server}
 
 \section{\textsc{Work Experience}}
-\cventry{06/2014 -- Present}{Senior DevOps Engineer}{PlayFab, Inc.}
+\cventry{06/2014 -- 09/2015}{Senior DevOps Engineer}{PlayFab, Inc.}
 {Seattle, WA}{}{%
   \begin{itemize}
-    \item Designed and built a scalable server management stack for all of
-      PlayFab's services. This allowed PlayFab engineers to easily build, test,
-      deploy (and if needed, roll back) new versions of the company's core API
-      services in time measured in minutes rather than hours as well as saving
-      the company \$500,000 in AWS costs over the year.
+    \item As one of the first-round engineering hires at PlayFab, designed and
+      built a scalable server management stack for all of PlayFab's services.
+      This allowed PlayFab engineers to build, test, and deploy new versions of
+      the company's core services in under 15 minutes as well as saving the
+      company \$500,000 in AWS costs over a 12 month period.
       \begin{itemize}
-        \item Built continuous integration and testing on Jenkins to automate
-          deployments to Amazon Elastic Beanstalk.
-        \item Deployed a Consul cluster in each datacenter to provide service
-          discovery and monitoring.
+        \item Built continuous integration and test automation on Jenkins to
+          automate deployments to Amazon Elastic Beanstalk.
+        \item Deployed Consul clusters in multiple datacenters to provide
+          service discovery and monitoring.
         \item Developed scripted deployment of Windows and Linux servers using
           masterless SaltStack with state storage in S3.
-        \item Developed a simple data pipeline using Heka as an event stream
-          router and performance data collector, with ElasticSearch and
-          InfluxDB as data backends for log and performance metrics.
+        \item Developed a data pipeline using Heka as an event stream router
+          and performance data collector, with ElasticSearch and InfluxDB as
+          backends for log and performance metrics.
         \item Saved time for developers every day by building internal
           dashboards using Kibana, Grafana and the Consul web UI to expose log,
           performance and health data.
       \end{itemize}
     \item Ported the Consul API from Go to C\# and open-sourced the library as
-      \textbf{Consul.NET}. This library is used internally to allow core
-      PlayFab services which are written in ASP.NET/C\# to take advantage of
-      the distributed lock and highly consistent key/value pair storage
-      provided by Consul.
+      \textbf{Consul.NET}. This library is used by PlayFab services written in
+      C\# to take advantage of the distributed lock and highly consistent
+      key/value pair storage provided by Consul as well as monitor multi-region
+      health checks for an Azure-based status page.
     \item Redesigned and upgraded PlayFab's \textbf{ejabberd} infrastructure,
       which was used to provide game chat services. Wrote an ejabberdctl
       cluster join/leave module in Erlang to use as part of an AWS autoscaling
